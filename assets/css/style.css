@@ -37,7 +37,10 @@ header.primary nav{
   width:80vw;
   margin:20px auto;
   max-width:900px;
-  background-color: #ecbedb;
+  padding-top:50px;
+  padding-bottom:50px;
+  background-color: rgba(236, 190, 219, 0.5);
+  border:1px solid #fff;
 }
 
 header.primary nav ul{
@@ -70,9 +73,17 @@ header.primary nav ul {
     flex-direction:column;
     max-width:400px;
     margin:0 auto;
-    
 }
 header.primary nav a{
     display:block;
+}
+
+header.primary nav h3{
+  text-align:left;
+  border-bottom:1px solid #fff;
+}
+
+header.primary nav p{
+  text-align:left;
 }
   
