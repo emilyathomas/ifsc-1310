@@ -48,7 +48,7 @@ img{
 
 /* ---------------Global Styles----------------- */
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   margin:0;
   line-height:1.5
 }
@@ -85,8 +85,8 @@ header.primary h1 a{
 }
 
 header.primary h2{
-  font-size:2rem;
-  /* Top | Left/Right | Bottom */
+  font-family:'Raleway', sans-serif;
+  font-size:2em;
   margin:20px auto 40px;
 }
 
