@@ -1,0 +1,295 @@
+/* color scheme
+0, 82, 136 | 005288
+167, 169, 172 | A7A9AC
+*/
+
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- Global Styles ---- */
+
+body{
+  font-family: "Times New Roman", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  background-color: #A7A9AC;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  padding: 6em 2em;
+  position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: 
+  url("https://assets.codepen.io/7248/dragon-in-space.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url("https://assets.codepen.io/7248/logo-2.png");
+  display: block;
+  width: 450px;
+  height: 70px;
+  margin: 0 auto;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+header.primary h2{
+  font-family: 'Orbitron', sans-serif;
+  font-size:2em;
+  margin:20px auto 40px;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+  padding:10px;
+}
+
+header.primary nav ul li a:link, header.primary nav ul li a:visited{
+  color:#ffffff;
+  text-decoration:none;
+  background-color:#000000;
+  background-color:rgba(0, 82, 136,.4);
+  padding: 8px 16px;
+  border-radius:20px;
+  transition:.5s;
+  display: block;
+}
+
+header.primary nav ul li a:hover, header.primary nav ul li a:active{
+  background-color:rgba(167, 169, 172,.8);
+}
+
+#content h3{
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #005288;
+}
+
+section#content h2, section#articles h2{
+  flex: 0 0 100%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #005288;
+}
+
+aside h2{
+  flex: 0 0 100%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: left;
+  color: #005288;
+}
+/* ----- Articles -----*/
+
+#articles{
+  background: #A7A9AC;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  border-bottom: 1px solid #c0c0c0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 4em 4em 4em;
+}
+
+#articles article.post{
+  width:30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,.4);
+  background:#ffffff;
+  padding:10px;
+  transition:.6s;
+  border-radius:10px;
+  font-size:.9rem;
+}
+
+#articles article img{
+  border-radius:4px;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+#articles .post figure{
+  margin:0;
+}
+
+#articles .post figure img{
+  height:80px;
+  width:170px;
+}
+
+#articles article time, #articles article figcaption, #articles article footer{
+  font-size:.7rem;
+  text-transform:uppercase;
+  color:#dadada;
+}
+
+#articles article.post:hover{
+  box-shadow: 0 8px 16px rgba(0, 82, 136,.4);
+}
+#articles article.post a:link, #articles article.post a:visited{
+  color:#005288;
+}
+
+#articles article.post a:hover, #articles article.post a:active{
+  color:#A7A9AC;
+}
+
+#articles ul{
+  padding: 0 20px;
+}
+
+/* ----- Tables ----- */
+
+aside .container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+aside article.widget{
+  width:40%;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size: 0.7em;
+  border-collapse: collapse;
+}
+
+table th{
+  padding: 10px;
+  text-align: left;
+  background:rgba(0, 82, 136, 0.4);
+}
+
+ table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table tr:nth-child(even){
+  background: rgba(167, 169, 172, .25)
+}
+
+/* ----- Footer ----- */
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  background: #A7A9AC;
+}
+#colophon h6 a:link, #colophon h6 a:visited{
+  color:#005288;
+}
+
+#colophon h6 a:hover, #colophon h6 a:active{
+  color:#A7A9AC;
+}
+
+/* ----- Image Gallery ----- */
+
+.gallery {
+	background-color: #CCC;
+	width: 730px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	height: 516px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.gallerynav{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallerynav a{
+    display:block;
+    width:50%;
+    text-align:center;
+}
